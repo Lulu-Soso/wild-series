@@ -15,6 +15,24 @@
 		</div>
 	</div>
 
+	<tr>
+		<th>Seasons</th>
+		<td>
+			<ul>
+				{% for season in program.seasons %}
+					<li>
+						<a href="{{path('program_season_show', {'programId': season.program.id, 'seasonId': season.id})}}">Saison
+							{{season.number}}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</td>
+
+	</tr>
+	<a href="{{ path('program_index') }}">
+		Liste des saisons
+	</a><br>
+
 	<a href="{{ path('program_index') }}">
 		Retour à la liste des programmes
 	</a>
