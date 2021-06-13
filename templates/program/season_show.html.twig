@@ -10,15 +10,20 @@
 		de
 		{{season.program.title}}</h1>
 
+
 	<p>Liste des épisodes</p>
 	<ul>
 		{% for episode in season.episodes %}
+			<!--<li>Episode n° {{episode.title}}, synopsis : {{episode.synopsis}}  </li>-->
 			<li>
-				<h2>{{episode.title}}</h2>
-				<p>{{episode.synopsis}}</p>
+				<a href="{{path('program_episode_show', {'programId': season.program.id, 'seasonId': season.id, 'episodeId': episode.id} )}}">Episode n°
+					{{episode.title}}
+				</a>
 			</li>
-
 		{% endfor %}
+
+
 	</ul>
+
 
 {% endblock %}
