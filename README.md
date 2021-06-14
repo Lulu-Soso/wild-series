@@ -11,3 +11,6 @@ https://www.loom.com/share/bc20e8cf756e4054894b24cf78debd53
 
 lien quête 13 sur CRUD
 https://www.loom.com/share/dda586f9d5e345b5b810d4d27d5aeb1f
+
+lien quête 14 sur Validation
+https://www.loom.com/share/074a0f92634440b9a393be8ac9cdccda
