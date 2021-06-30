@@ -1,21 +1,22 @@
+{# templates/actor/show.html.twig #}
 {% extends 'base.html.twig' %}
-
-{% block title %}All programs
+{% block title %}Acteur #{{ actor.name }}
 {% endblock %}
 
 {% block body %}
-	<h1>Toutes les séries :
+
+	<h1>Toutes les séries de l'acteur
+		{{ actor.name }}
+		:
 	</h1>
 	{% for program in programs %}
 		<div>
 			<h2>{{ loop.index }}
 				/
-				{{ program.title }}
-				- Catégorie :
-				{{ program.category.name }}</h2>
+				{{ program.title }}</h2>
 			<p>{{ program.summary }}</p>
-			{# Lien vers la fiche de la série : #}
-			<a href="{{ path("program_show", { program: program.id }) }}">Voir la fiche</a>
+
+			<a href="{{ path("program_show", { 'program': program.id }) }}">Voir la fiche</a>
 		</div>
 	{% else %}
 		Aucune série trouvée.
@@ -24,4 +25,5 @@
 	<a href="{{ path('app_index') }}">
 		Retour à l'accueil
 	</a>
+
 {% endblock %}
