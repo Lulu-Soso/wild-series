@@ -17,3 +17,6 @@ https://www.loom.com/share/074a0f92634440b9a393be8ac9cdccda
 
 lien quête 15 sur Many-To-Many
 https://www.loom.com/share/5db645f437074e4d82095974439591bf
+
+lien quête 16 sur EntityType
+https://www.loom.com/share/887dd50460004ce5b8151c437eafe626
