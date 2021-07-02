@@ -20,3 +20,6 @@ https://www.loom.com/share/5db645f437074e4d82095974439591bf
 
 lien quête 16 sur EntityType
 https://www.loom.com/share/887dd50460004ce5b8151c437eafe626
+
+lien quête 17 sur les fixtures avancées avec jointures
+https://www.loom.com/share/3eb9cfaa931b4879b12790dac0fdcec8
