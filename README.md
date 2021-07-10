@@ -23,3 +23,6 @@ https://www.loom.com/share/887dd50460004ce5b8151c437eafe626
 
 lien quête 17 sur les fixtures avancées avec jointures
 https://www.loom.com/share/3eb9cfaa931b4879b12790dac0fdcec8
+
+lien quête 18 sur Introduction aux “Services”
+https://www.loom.com/share/b3a7672355cb41dcb72541d4cd363b21

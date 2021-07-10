@@ -3,9 +3,10 @@
 namespace App\DataFixtures;
 
 use App\Entity\Program;
+use App\Service\Slugify;
+use Doctrine\Persistence\ObjectManager;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\DataFixtures\DependentFixtureInterface;
-use Doctrine\Persistence\ObjectManager;
 
 class ProgramFixtures extends Fixture implements DependentFixtureInterface
 {
@@ -15,8 +16,16 @@ class ProgramFixtures extends Fixture implements DependentFixtureInterface
         'Friends',
         'Lupin',
         'sex and the city ',
+        'le roi maudit',
 
     ];
+
+    private $slugify;
+
+    public function __construct(Slugify $slugify)
+    {
+        $this->slugify = $slugify;
+    }
 
     public function load(ObjectManager $manager)
     {
@@ -25,9 +34,11 @@ class ProgramFixtures extends Fixture implements DependentFixtureInterface
         foreach (self::PROGRAMS as $key => $programTitle) {
             $program = new Program();
             $program->setTitle($programTitle);
-            $program->setSummary('résumé de la série' . $programTitle);
+            $program->setSummary('résumé de la série :' . ' ' . $programTitle);
             $program->setCategory($this->getReference('category_' . $key));
             $this->addReference('program_' . $key, $program);
+            $slug = $this->slugify->generate($program->getTitle());
+            $program->setSlug($slug);
 
             //ici les acteurs sont insérés via une boucle pour être DRY mais ce n'est pas obligatoire
             for ($i = 0; $i < count(ActorFixtures::ACTORS); $i++) {

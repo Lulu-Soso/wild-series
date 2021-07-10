@@ -1,0 +1,41 @@
+.title {
+  text-align: center;
+  justify-content: center;
+}
+
+.display {
+  width: 33%;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.align {
+  text-align: center;
+}
+
+.height-img {
+  height: 260px;
+  background-image: cover;
+}
+
+.form {
+  width: 700px;
+  background-color: white;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form h1 {
+  text-align: center;
+}
+
+label {
+  width: 150px;
+  padding: 20px;
+}
+
+textarea {
+  width: 500px;
+}
