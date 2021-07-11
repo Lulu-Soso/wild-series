@@ -14,21 +14,23 @@
 						<div class="card-title align">
 							<h2>{{program.title}}</h2>
 						</div>
-						<p class="card-text"></p>
-						<p>{{program.summary}}</p>
-					</p>
-					<p class="card-text">
-						<h4>Catégorie :{{ program.category.name }}</h4>
-					</p>
-					<p>
-						{# Lien vers la fiche de la série : #}
-						<a href="{{ path("program_show", { "program_slug": program.slug }) }}">Voir la fiche</a>
-					</p>
-					<a href="{{ path('app_index') }}">
-						Retour à l'accueil</a>
+						<p class="card-text">
+							{{program.summary}}
+						</p>
+						<p class="card-text">
+							Catégorie :
+							{{ program.category.name }}
+						</p>
+						<p>
+							{# Lien vers la fiche de la série : #}
+							<a href="{{ path("program_show", { "program_slug": program.slug }) }}">Voir la fiche</a>
+						</p>
+						<a href="{{ path('app_index') }}">
+							Retour à l'accueil</a>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-{% else %}Aucune série trouvée.{% endfor %}{% endblock %}
+	</section>
+	{% else %}Aucune série trouvée.
+{% endfor %}{% endblock %}

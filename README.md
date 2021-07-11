@@ -26,3 +26,6 @@ https://www.loom.com/share/3eb9cfaa931b4879b12790dac0fdcec8
 
 lien quête 18 sur Introduction aux “Services”
 https://www.loom.com/share/b3a7672355cb41dcb72541d4cd363b21
+
+lien quête 19 sur Envoi d'E-mail
+https://www.loom.com/share/a3ad27e419f045438cacc65e2eb5138d
